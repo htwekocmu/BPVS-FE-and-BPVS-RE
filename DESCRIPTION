@@ -1,0 +1,13 @@
+Package: BPVS
+Type: Package
+Title: BPVS Predictive Model Utilities
+Version: 0.1.0
+Authors@R: person("htwekocmu", "", email = "htwekocmu@users.noreply.github.com", role = c("aut", "cre"))
+Description: Utilities to load and use the BPVS-FE and BPVS-RE models (predict functions, examples, and a Shiny app for panel covariate selection).
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    stats, shiny
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.2

@@ -1,0 +1,39 @@
+Package: BPVS
+Type: Package
+Title: Bayesian Panel Variable Selection with Regularized Horseshoe Priors
+Version: 1.0.0
+Authors@R: c(
+    person("Pathairat", "Pastpipatkul", email = "p.pastpipatkul@gmail.com", role = c("aut", "cre")),
+    person("Htwe", "Ko", email = "htweko@example.com", role = "aut"))
+Description: Bayesian Panel Variable Selection (BPVS) for balanced panels. A regularized
+    horseshoe (continuous spike-and-slab) prior is placed on the slope coefficients while
+    unit-specific heterogeneity is handled either by fixed effects (unit dummies, BPVS-FE)
+    or by random intercepts (BPVS-RE). The package computes posterior inclusion
+    probabilities (PIPs), variable rankings, WAIC and Bayesian R-squared, and Bayesian and
+    frequentist Hausman comparisons between the two panel specifications. Estimation is
+    implemented with 'brms' on 'Stan'.
+License: GPL (>= 3) | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 4.0)
+Imports:
+    brms (>= 2.20),
+    dplyr (>= 1.0),
+    ggplot2 (>= 3.4),
+    ggrepel,
+    loo (>= 2.4),
+    magrittr,
+    MASS,
+    plm,
+    posterior (>= 1.4),
+    rlang,
+    stats,
+    utils
+Suggests:
+    bayesplot,
+    cmdstanr,
+    rstan,
+    shiny,
+    testthat (>= 3.0)
+Config/testthat/edition: 3
+RoxygenNote: 7.3.3
